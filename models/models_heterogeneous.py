@@ -2,7 +2,7 @@
 
 import numpy as np
 import sequence_jacobian as sj
-from two_asset_calvo import twoasset_calvo, calvo, make_grids_twoassets
+from .two_asset_calvo import twoasset_calvo, calvo, make_grids_twoassets
 import calibration
 
 """HA-one model"""
