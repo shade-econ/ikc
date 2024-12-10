@@ -1,7 +1,7 @@
 import numpy as np  
 import matplotlib.pyplot as plt
 import pandas as pd
-from models.two_asset_calvo import interpolate # To interpolate cdf
+from models.two_account_calvo import interpolate # To interpolate cdf
 from scipy.integrate import trapz       # To calculate Gini
 
 plt.rc('font', size=15)
