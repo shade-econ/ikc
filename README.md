@@ -1,16 +1,20 @@
 # ikc
 
-This repository replicates the figures and tables in "[The Intertemporal Keynesian Cross](https://doi.org/10.1086/732531)" (Auclert, Rognlie and Straub JPE 2024)
+This repository replicates the figures and tables in "[The Intertemporal Keynesian Cross](https://shade-econ.github.io/ikc/ikc.pdf)" (Auclert, Rognlie, and Straub JPE 2024). \[[Published version](https://doi.org/10.1086/732531)\]
 
-The code runs in Python 3.12. It uses the [Sequence Space Jacobian toolkit](https://github.com/shade-econ/sequence-jacobian/) version 1.0.
+The code requires the [Sequence Space Jacobian (SSJ) toolkit](https://github.com/shade-econ/sequence-jacobian/) version 1.0, in addition to standard numerical Python packages (`numpy`, `scipy`, `matplotlib`, `numba`, `pandas`) and Jupyter notebooks. We have tested it using Python 3.10+. The SSJ toolkit can be installed using `pip install sequence-jacobian`; please see the toolkit site for additional instructions.
 
-To obtain a new environment that will run the code using `conda`, at the command line you can write  
-```
-conda create -n ikc_env numpy scipy matplotlib numba pandas jupyter python=3.12
-conda activate ikc_env
-pip install sequence-jacobian
-``` 
-before launching Jupyter or running any code.
+If you run into any difficulties with the code, please feel free to post on the repository's issue tracker.
+
+## Organization
+
+Most of the results of the paper are obtained in three main Jupyter notebooks, each of which is associated with some sections in the main text, and produces figures and tables for those sections, in addition to closely related appendix figures and tables:
+
+- `main_sec34.ipynb` (sections 3 and 4) calibrates our household models and compares their iMPCs to those in the data
+- `main_sec5.ipynb` (section 5) studies the effects of fiscal policy subject to the IKC
+- `main_sec67.ipynb` (sections 6 and 7) sets up our quantitative environment and studies the iMPCs out of capital gains and effects of fiscal policy in that environment
+
+Below we have a more complete outline of the contents of each of the main notebooks.
 
 ### Part I: IKC environment, calibration and iMPCs - sections 3 and 4 (`main_sec34.ipynb` )
 
