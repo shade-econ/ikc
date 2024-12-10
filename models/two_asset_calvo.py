@@ -1,7 +1,6 @@
 import numpy as np
 from numba import guvectorize, njit
 
-from sequence_jacobian.blocks.support.het_compiled import expectation_policy_2d
 from sequence_jacobian.interpolate import interpolate_coord, interpolate_y
 import sequence_jacobian as sj
 

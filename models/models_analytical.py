@@ -1,8 +1,9 @@
 import numpy as np
 from scipy import linalg
 import sequence_jacobian as sj
-import jacobian_manipulation as jac
-import calibration
+
+from base import calibration, jacobian_manipulation as jac
+
 
 """Obtain M and A Jacobian matrices for analytical models RA, TA, BU, TABU, ZL given parameters"""
 

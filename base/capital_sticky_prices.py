@@ -1,5 +1,3 @@
-import numpy as np  
-import scipy.optimize as opt
 import sequence_jacobian as sj  
 
 ## 

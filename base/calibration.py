@@ -1,5 +1,5 @@
 import numpy as np
-from capital_sticky_prices import production_pricesetting
+from .capital_sticky_prices import production_pricesetting
 import json
 
 """Calibration parameters for models and IKC / quantitative environment
@@ -91,7 +91,7 @@ kappap = 1/(1 + Gamma) * (1 - (1/(1 + r)) * (1 - freq_p)) * freq_p/(1 - freq_p)
 # for slope of wage Phillips curve, we need a household beta, which is model-dependent
 # to keep kappa_w consistent across models, we use the beta from the HA-two model
 # load beta from solved_params.json file
-with open('solved_params.json') as f:
+with open('intermediates/solved_params.json') as f:
     solved_params = json.load(f)
     beta_HA_two = solved_params['HA-two']['beta']
 
