@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-from sec34_plots import set_texfig
+from .sec34_plots import set_texfig
 
 plt.rc('font', size=15)
 

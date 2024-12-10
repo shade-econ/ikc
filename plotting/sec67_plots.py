@@ -1,8 +1,8 @@
 import numpy as np  
 import matplotlib.pyplot as plt
 
-from sec5_plots import table4
-from sec34_plots import set_texfig
+from .sec5_plots import table4
+from .sec34_plots import set_texfig
 
 def figure7(mcap, mlab, texfig=True, savefig=False):
     if texfig:
