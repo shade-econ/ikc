@@ -14,6 +14,8 @@ Most of the results of the paper are obtained in three main Jupyter notebooks, e
 - `main_sec5.ipynb` (section 5) studies the effects of fiscal policy subject to the IKC
 - `main_sec67.ipynb` (sections 6 and 7) sets up our quantitative environment and studies the iMPCs out of capital gains and effects of fiscal policy in that environment
 
+Most of the code runs quickly, but the calibration of the two-account model in `main_sec34.ipynb` can take a few minutes. To make this run more quickly, you can comment out the line that solves for the calibration and uncomment a line where we hardcode it.
+
 There are also three notebooks that correspond to more specialized parts of the appendix:
 
 - `appendix_solution_methods.ipynb` considers five approaches to solving the IKC and produces Figure A.1 
